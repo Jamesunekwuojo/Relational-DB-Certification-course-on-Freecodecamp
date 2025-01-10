@@ -1,12 +1,11 @@
 ```sql
+
 psql --username=freecodecamp --dbname=postgres
 
+```
 CREATE DATABSE universe;
 
 \c universe
-
-
-
 
 CREATE TABLE galaxy (
   galaxy_id SERIAL NOT NULL PRIMARY KEY,
@@ -144,7 +143,7 @@ VALUES
 ('Ganymede 2', 'Fictional second moon of Ganymede.', 120, 1, TRUE, FALSE, 4.5, 4),
 ('Callisto 2', 'Fictional second moon of Callisto.', 190, 1, TRUE, FALSE, 4.5, 4);
 
-
+--Inserting into comet
 INSERT INTO comet (name, description, comet_type, diameter, orbit_path, nucleus_no, has_ring, has_coma, planet_id)
 VALUES
 ('Halley Comet', 'The most famous of all comets.', 'Periodic', 11, 76, 1, FALSE, TRUE, 3),
